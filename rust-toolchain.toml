@@ -1,0 +1,5 @@
+[toolchain]                         # See: https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file
+channel = "1.90.0"                  # See: https://rust-lang.github.io/rustup/overrides.html#channel
+components = [ "rust-analyzer" ]    # See: https://rust-lang.github.io/rustup/concepts/components.html
+profile = "default"                  # See https://rust-lang.github.io/rustup/concepts/profiles.html
+# targets = []                      # See https://rust-lang.github.io/rustup/cross-compilation.html
