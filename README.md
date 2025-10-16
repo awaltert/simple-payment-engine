@@ -77,6 +77,16 @@ Finally, the engine stops and the binary will invoke the `CsvEncoder` with the `
 - Handler functions know how to process a transaction of a certain type.
 - Data changes to accounts and transactions are communicated to the specialized repositories.
 
+### Repositories
+
+- Should mimic realistic scenarios while storing `Account` and `Transaction` entities in memory.
+- Both implement a trait, that is not strictly necessary for the use case, but serves demonstration purposes.
+
+### CsvEncoder
+
+- Simple to use interface.
+- Generic over `std::io::Write`, enabling more flexible use-cases.
+
 ## Disclaimer
 
 I invested significant time to demonstrate my experience. To showcase patterns and concepts, I introduce more abstractions and system design than necessary, while still focusing on quality, delivery and the use cases.
