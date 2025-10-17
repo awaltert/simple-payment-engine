@@ -9,6 +9,7 @@ use super::client::ClientId;
 /// It also hold the critical calculations, thus is intensivele tested with unit test, that can be found in the [tests] submodule
 #[derive(Debug, Clone, Copy, Serialize)]
 pub struct Account {
+    #[serde(rename = "client")]
     pub client_id: ClientId,
     pub available: Decimal,
     pub held: Decimal,
